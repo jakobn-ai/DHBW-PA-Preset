@@ -14,7 +14,11 @@
 \widowpenalty = 10000
 \setcounter{biburllcpenalty}{7000}
 \setcounter{biburlucpenalty}{8000}
-\lstset{basicstyle=\fontsize{8pt}{9.6pt}\selectfont\ttfamily,breaklines=true,backgroundcolor=\color[HTML]{FFFFC0}}
+\makeatletter
+\lst@AddToHook{TextStyle}{\let\lst@basicstyle\ttfamily\normalsize}
+\lst@AddToHook{DisplayStyle}{\let\lst@basicstyle\ttfamily\fontsize{8pt}{9.6pt}\selectfont}
+\makeatother
+\lstset{breaklines=true,backgroundcolor=\color[HTML]{FFFFC0},literate={\_}{}{0\discretionary{\_}{}{\_}}}
 \urlstyle{tt}
 \DefineBibliographyStrings{ngerman}{nodate = {{}o. J.}}
 \setlist{nosep}
