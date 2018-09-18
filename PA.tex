@@ -10,8 +10,8 @@
 \DeclareLanguageMapping{ngerman}{ngerman-apa}
 \bibliography{PA}
 \linespread{1.5}
-\clubpenalty = 10000
-\widowpenalty = 10000
+\clubpenalty10000
+\widowpenalty10000
 \setcounter{biburllcpenalty}{7000}
 \setcounter{biburlucpenalty}{8000}
 \makeatletter
@@ -44,11 +44,11 @@
 \newpage \tableofcontents
 \input inhalt/Abkuerzungen
 \newpage \addcontentsline{toc}{section}{Abbildungsverzeichnis} \listoffigures
-\newpage \addcontentsline{toc}{section}{Listings} \lstlistoflistings
+\newpage \addcontentsline{toc}{section}{Listings} \lstlistoflistings{}
 \newpage \pagenumbering{arabic}
 \input inhalt/1
-\newpage \addcontentsline{toc}{section}{Literatur} \printbibliography
-\newpage \addcontentsline{toc}{section}{Glossar} \glsaddall \printglossaries
+\newpage \addcontentsline{toc}{section}{Literatur} \printbibliography{}
+\newpage \addcontentsline{toc}{section}{Glossar} \glsaddall{} \printglossaries{}
 \newpage \section*{Anmeldung} \addcontentsline{toc}{section}{Anmeldung} \includegraphics[width=\textwidth,trim= 60 60 60 60]{pdfs/anmeldung.pdf}
 
 \end{document}
