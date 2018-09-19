@@ -18,6 +18,10 @@
 \lst@AddToHook{TextStyle}{\let\lst@basicstyle\ttfamily\normalsize}
 \lst@AddToHook{DisplayStyle}{\let\lst@basicstyle\ttfamily\fontsize{8pt}{9.6pt}\selectfont}
 \makeatother
+\makeatletter
+\renewcommand{\@pnumwidth}{3em}
+\renewcommand{\@tocrmarg}{4em}
+\makeatother
 \lstset{breaklines=true,backgroundcolor=\color[HTML]{FFFFC0},literate={\_}{}{0\discretionary{\_}{}{\_}}}
 \urlstyle{tt}
 \DefineBibliographyStrings{ngerman}{nodate = {{}o. J.}}
