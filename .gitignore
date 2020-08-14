@@ -1,3 +1,10 @@
+Abstracts.aux
+Abstracts.fdb_latexmk
+Abstracts.fls
+Abstracts.glo
+Abstracts.ist
+Abstracts.log
+Abstracts.synctex.gz
 PA.aux
 PA.bbl
 PA.bcf
@@ -12,6 +19,7 @@ PA.lof
 PA.log
 PA.lol
 PA.lot
+PA.lox
 PA.out
 PA.run.xml
 PA.synctex.gz

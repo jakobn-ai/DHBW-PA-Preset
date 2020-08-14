@@ -1,17 +1,14 @@
 % !TeX root = ./PA.tex
-\documentclass[headheight=21pt,footheight=21pt,status=draft]{scrartcl}
+\input hilfe/common
 
-\usepackage{csquotes,enumitem,float,fixme,fontspec,graphicx,hyphenat,listings,pdfpages,scrhack,scrlayer-scrpage,tabularx,xcolor}
+\usepackage{csquotes,enumitem,float,graphicx,hyphenat,listings,pdfpages,tabularx,xcolor}
 \usepackage[printonlyreused]{acronym}
 \usepackage[english,ngerman]{babel}
 \usepackage[style=alphabetic,maxalphanames=4,maxnames=4,urldate=long]{biblatex}
 \usepackage[format=plain]{caption}
-\usepackage[vmargin=30mm,lmargin=37mm]{geometry}
-\usepackage[nonumberlist]{glossaries}
 \usepackage[hidelinks]{hyperref}
 
 \bibliography{PA}
-\linespread{1.5}
 
 \clubpenalty=9000
 \widowpenalty=9000
@@ -37,14 +34,9 @@ escapeinside={(*}{*)}}
 
 \renewcommand{\sectionmark}[1]{\markboth{#1}{}}
 \ihead{\leftmark}
-\chead{}
 \ohead{\autor}
 \ifoot{}
 \cfoot{\thepage}
-\ofoot{}
-
-\input hilfe/Einstellungen
-\input inhalt/Glossar
 
 \begin{document}
 
