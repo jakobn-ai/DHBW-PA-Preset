@@ -4,11 +4,10 @@
 \usepackage{csquotes,enumitem,float,fixme,fontspec,graphicx,hyperref,hyphenat,listings,pdfpages,scrhack,scrlayer-scrpage,tabularx,xcolor}
 \usepackage[printonlyreused]{acronym}
 \usepackage[english,ngerman]{babel}
-\usepackage[style=apa]{biblatex}
+\usepackage[style=alphabetic,maxalphanames=4,maxnames=4,urldate=long]{biblatex}
 \usepackage[top=30mm,bottom=30mm,left=40mm,right=35mm]{geometry}
 \usepackage[nonumberlist]{glossaries}
 
-\DeclareLanguageMapping{ngerman}{ngerman-apa}
 \bibliography{PA}
 \linespread{1.5}
 \clubpenalty10000
@@ -25,7 +24,6 @@
 \makeatother
 \lstset{breaklines=true,backgroundcolor=\color[HTML]{FFFFC0},literate={\_}{}{0\discretionary{\_}{}{\_}}}
 \urlstyle{tt}
-\DefineBibliographyStrings{ngerman}{nodate = {{}o. J.}}
 \setlist{nosep,style=sameline}
 \renewcommand{\sectionmark}[1]{\markboth{#1}{}}
 \ihead{\leftmark}
