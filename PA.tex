@@ -19,14 +19,18 @@
 \setcounter{biburlucpenalty}{9000}
 
 \makeatletter
-\lst@AddToHook{TextStyle}{\let\lst@basicstyle\ttfamily\normalsize}
-\lst@AddToHook{DisplayStyle}{\let\lst@basicstyle\ttfamily\fontsize{8pt}{9.6pt}\selectfont}
-\makeatother
-\makeatletter
 \renewcommand{\@pnumwidth}{3em}
 \renewcommand{\@tocrmarg}{4em}
 \makeatother
-\lstset{breaklines=true,backgroundcolor=\color[HTML]{FFFFC0},literate={\_}{}{0\discretionary{\_}{}{\_}}}
+
+\lstset{basicstyle=\ttfamily\fontsize{8.3pt}{10pt}\selectfont,
+keywordstyle=\color{purple},
+stringstyle=\color{red},
+commentstyle=\color[HTML]{00A000},
+backgroundcolor=\color[HTML]{FFFFC0},
+breaklines=true,
+escapeinside={(*}{*)}}
+
 \urlstyle{tt}
 \setlist{nosep,style=sameline}
 \renewcommand{\sectionmark}[1]{\markboth{#1}{}}
