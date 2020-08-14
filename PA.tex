@@ -67,6 +67,6 @@ escapeinside={(*}{*)}}
 \input inhalt/1
 \newpage \ihead{} \addcontentsline{toc}{section}{Literatur} \printbibliography{}
 \newpage \addcontentsline{toc}{section}{Glossar} \glsaddall{} \printglossaries{}
-\newpage \section*{Anmeldung} \addcontentsline{toc}{section}{Anmeldung} \includegraphics[width=\textwidth,trim= 60 60 60 60]{pdfs/anmeldung.pdf}
+\newpage \addcontentsline{toc}{section}{Anmeldung} \includepdf[pages=-,pagecommand={\pagestyle{scrheadings}},scale=.8]{pdfs/anmeldung.pdf}
 
 \end{document}
