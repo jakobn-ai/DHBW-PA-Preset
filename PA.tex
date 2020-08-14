@@ -1,7 +1,7 @@
 % !TeX root = ./PA.tex
-\documentclass[headheight=21.75pt,footheight=21.75pt]{scrartcl}
+\documentclass[headheight=21.75pt,footheight=21.75pt,status=draft]{scrartcl}
 
-\usepackage{graphicx,tabularx,xcolor,hyperref,scrlayer-scrpage,scrhack,enumitem,listings,xurl,pdfpages,courier,anyfontsize,float,csquotes,fontspec}
+\usepackage{fixme,graphicx,tabularx,xcolor,hyperref,scrlayer-scrpage,scrhack,enumitem,listings,xurl,pdfpages,courier,anyfontsize,float,csquotes,fontspec}
 \usepackage[style=apa]{biblatex}
 \usepackage[top=30mm,bottom=30mm,left=40mm,right=35mm]{geometry}
 \usepackage[printonlyused]{acronym}
@@ -47,6 +47,7 @@
 \newpage \input hilfe/Erklaerung
 \newpage \input inhalt/Abstract
 \newpage \tableofcontents
+\newpage \listoffixmes{} % vor Abgabe diese Newpage entfernen und alle Fixmes entfernen oder status=final setzen
 \input inhalt/Abkuerzungen
 \newpage \addcontentsline{toc}{section}{Abbildungsverzeichnis} \listoffigures
 \newpage \addcontentsline{toc}{section}{Tabellenverzeichnis} \listoftables
