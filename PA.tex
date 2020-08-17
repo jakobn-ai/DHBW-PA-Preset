@@ -9,6 +9,7 @@
 \usepackage[hidelinks]{hyperref}
 
 \bibliography{PA}
+\makeglossaries{}
 
 \clubpenalty=9000
 \widowpenalty=9000
@@ -49,6 +50,7 @@ escapeinside={(*}{*)}}
 \newpage \input inhalt/Abstract
 \newpage \tableofcontents
 \newpage \listoffixmes{} % vor Abgabe diese Newpage entfernen und alle Fixmes entfernen oder status=final setzen
+\newpage \section*{Abkürzungsverzeichnis} \addcontentsline{toc}{section}{Abkürzungsverzeichnis}
 \input inhalt/Abkuerzungen
 \newpage \addcontentsline{toc}{section}{Abbildungsverzeichnis} \listoffigures
 \newpage \addcontentsline{toc}{section}{Tabellenverzeichnis} \listoftables
