@@ -1,7 +1,7 @@
 % !TeX root = ./PA.tex
-\input hilfe/common
+\input aux/common
 
-\usepackage{csquotes,enumitem,float,graphicx,hyphenat,listings,pdfpages,tabularx,xcolor}
+\usepackage{csquotes,enumitem,float,graphicx,listings,pdfpages,tabularx,xcolor}
 \usepackage[printonlyreused]{acronym}
 \usepackage[english,ngerman]{babel}
 \usepackage[style=alphabetic,maxalphanames=4,maxnames=4,urldate=long]{biblatex}
@@ -34,7 +34,7 @@ stringstyle=\color{red}}
 
 \renewcommand{\sectionmark}[1]{\markboth{#1}{}}
 \ihead{\leftmark}
-\ohead{\autor}
+\ohead{\theauthor}
 \ifoot{}
 \cfoot{\thepage}
 
@@ -44,23 +44,23 @@ stringstyle=\color{red}}
 \setlength{\abovedisplayskip}{-20pt}
 
 \pagenumbering{Roman}
-\input hilfe/Deckblatt
-%\newpage \input hilfe/Sperrvermerk
-\newpage \input hilfe/Erklaerung
-\newpage \input inhalt/Abstract
+\input aux/cover
+%\newpage \input aux/confidential
+\newpage \input aux/declaration
+\newpage \input contents/abstracts
 \newpage \tableofcontents
 \newpage \listoffixmes{} % vor Abgabe diese Newpage entfernen und alle Fixmes entfernen oder status=final setzen
 \newpage \section*{Abkürzungsverzeichnis} \addcontentsline{toc}{section}{Abkürzungsverzeichnis}
-\input inhalt/Abkuerzungen
+\input contents/abbrevs
 \newpage \addcontentsline{toc}{section}{Abbildungsverzeichnis} \listoffigures
 \newpage \addcontentsline{toc}{section}{Tabellenverzeichnis} \listoftables
 \newpage \addcontentsline{toc}{section}{Listings} \lstlistoflistings{}
 \acresetall{}
 
 \newpage \pagenumbering{arabic}
-\input inhalt/1
+\input contents/1
 \newpage \ihead{} \addcontentsline{toc}{section}{Literatur} \printbibliography{}
 \newpage \addcontentsline{toc}{section}{Glossar} \glsaddall{} \printglossaries{}
-\newpage \addcontentsline{toc}{section}{Anmeldung} \includepdf[pages=-,pagecommand={\pagestyle{scrheadings}},scale=.8]{pdfs/anmeldung.pdf}
+\newpage \addcontentsline{toc}{section}{Anmeldung} \includepdf[pages=-,pagecommand={\pagestyle{scrheadings}},scale=.8]{pdfs/registration.pdf}
 
 \end{document}
