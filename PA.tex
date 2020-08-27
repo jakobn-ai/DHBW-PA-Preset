@@ -4,11 +4,13 @@
 \usepackage{csquotes,enumitem,float,graphicx,listings,pdfpages,tabularx,xcolor}
 \usepackage[printonlyreused]{acronym}
 \usepackage[english,ngerman]{babel}
-\usepackage[style=alphabetic,dateabbrev=false,maxalphanames=4,maxnames=4,urldate=long]{biblatex}
+\usepackage[style=apa]{biblatex}
 \usepackage[format=plain,justification=centering]{caption}
 \usepackage[hidelinks]{hyperref}
 
 \bibliography{PA}
+\DeclareLanguageMapping{ngerman}{ngerman-apa}
+\DefineBibliographyStrings{ngerman}{nodate = {o.\,J.}}
 \makeglossaries{}
 
 \clubpenalty=10000

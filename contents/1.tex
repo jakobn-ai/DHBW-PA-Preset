@@ -1,23 +1,26 @@
 % !TeX root = ../PA.tex
 \section{Ausstehendes Kapitel}
 
-Glossar\hyp{}Eintrag \gls{ausstehend}, Abkürzung \ac{DHBW}, nochmal \ac{DHBW}, Listing~\ref{lst:Beispiel}\fxnote{Notiz}, Zitat~\cite[vgl.][]{OnlineKey}, noch eins~\cite[S.~1]{BookKey}
+Glossar\hyp{}Eintrag \gls{ausstehend}, Abkürzung \ac{DHBW}, nochmal \ac{DHBW}, Listing~\ref{lst:Beispiel}\fxnote{Notiz}, Zitat~\parencite[vgl.][S.~1]{BookKey}, noch eins: \cite{OnlineKey}
 
 \begin{sloppypar}
 \url{https://upload.wikimedia.org/wikipedia/commons/0/01/DHBW_MA_Logo.jpg}
 \end{sloppypar}
 
-
 \begin{figure}
-    \caption{Beispielbild}
-    \includegraphics[width=5cm]{img/logo.png}
+    \begin{center}
+        \includegraphics[width=5cm]{img/logo.png}
+        \caption{Beispielbild}
+    \end{center}
 \end{figure}
 
 \begin{table}
-    \caption{Beispieltabelle}
-    \begin{tabular}{ll}
-        Schlüssel&Wert
-    \end{tabular}
+    \begin{center}
+        \begin{tabular}{ll}
+            Schlüssel&Wert
+        \end{tabular}
+        \caption{Beispieltabelle}
+    \end{center}
 \end{table}
 
 \lstset{caption={Beispielcode},label={lst:Beispiel},language=python}
