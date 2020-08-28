@@ -7,10 +7,12 @@
 \usepackage[style=apa]{biblatex}
 \usepackage[format=plain,justification=centering]{caption}
 \usepackage[hidelinks]{hyperref}
+\usepackage[nonumberlist]{glossaries}
 
 \bibliography{PA}
 \DeclareLanguageMapping{ngerman}{ngerman-apa}
 \DefineBibliographyStrings{ngerman}{nodate = {o.\,J.}}
+\input contents/glossary
 \makeglossaries{}
 
 \clubpenalty=10000
